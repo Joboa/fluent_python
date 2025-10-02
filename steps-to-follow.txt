@@ -1,0 +1,11 @@
+PHASE 1: Core Language Mastery
+- Chapter 1, 2, 6, 7
+
+PHASE 2: Advanced Python Patterns
+- Chapter 9, 8
+
+PHASE 3: Object-oriented memory
+- Chapter 11, 12, 22
+
+PHASE 4: Advanced Concurrency & performance
+- Chapter 19-20, 17

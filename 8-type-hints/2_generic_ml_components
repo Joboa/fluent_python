@@ -1,0 +1,18 @@
+from typing import TypeVar, Generic, Protocol
+
+T = TypeVar('T')
+
+class Metric(Protocol):
+    """Protocol for metric functions"""
+    def __call__(self, y_true: Tensor, y_pred: Tensor) -> float:
+        ...
+
+class Trainer(Generic[T]):
+    """Generic trainer that works with different model types"""
+    
+    def __init__(self, model: T, metric: Metric) -> None:
+        # TODO: Implement generic trainer
+        pass
+
+# Usage with type checking:
+# trainer: Trainer[torch.nn.Module] = Trainer(my_cnn, accuracy_metric)
